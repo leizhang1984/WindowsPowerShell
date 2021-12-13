@@ -1,7 +1,7 @@
-#指定csv文件路径，csv文件第一列列名必须为username
+#set csv file path
 $csvpath = "D:\WVD\users.csv"
 
-#需要创建文件夹的路径
+#set folder path you need to create
 $folderpath = "D:\WVD\"
 
 #Start to Process CSV File
@@ -11,7 +11,7 @@ foreach ($rows in $p)
 {
         try
         {
-               #如果文件夹路径最后带斜杠("\")，则去除
+               #delete the last \ in folder path
                if($folderpath.EndsWith("\"))
                {
                    $folderpath = $folderpath.Substring(0,$folderpath.Length-1)
