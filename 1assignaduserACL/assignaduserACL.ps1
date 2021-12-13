@@ -1,4 +1,5 @@
-#set csv file path
+#set csv file path,
+#CSV file column header is username
 $csvpath = "D:\WVD\users.csv"
 
 #set folder path you need to create
