@@ -36,7 +36,7 @@ foreach ($rows in $p)
 
                $ace = New-Object System.Security.AccessControl.FileSystemAccessRule($userid,"FullControl",$inheritanceFlag, $propagationFlag,$type)
 
-               $ACL.AddAccessRule($ace)
+               #$ACL.AddAccessRule($ace)
                $acl = Get-Acl $newuserfolder
                $acl.SetAccessRule($ace)
                Set-Acl $newuserfolder $acl
